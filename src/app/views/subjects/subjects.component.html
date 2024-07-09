@@ -1,0 +1,32 @@
+<div class="subjects-section">
+  <p-tabView (onChange)="changeTab($event)">
+    <p-tabPanel header="Header 1">
+      <ng-template pTemplate="header">
+        <div class="flex align-items-center gap-2">
+          <span class="font-bold white-space-nowrap m-0">
+            المواد الدراسية
+          </span>
+        </div>
+      </ng-template>
+
+      <div class="subjects-container">
+        <h1>المواد</h1>
+        <div class="subjects-grid">
+          @for (subject of subjectsData; track $index) {
+          <app-subject-card [data]="subject" />
+          }
+        </div>
+      </div>
+    </p-tabPanel>
+    <p-tabPanel header="Header 2">
+      <ng-template pTemplate="header">
+        <div class="flex align-items-center gap-2">
+          <span class="font-bold white-space-nowrap m-0"> كل التمارين </span>
+        </div>
+      </ng-template>
+      <ng-template pTemplate="content">
+        <app-exercises />
+      </ng-template>
+    </p-tabPanel>
+  </p-tabView>
+</div>

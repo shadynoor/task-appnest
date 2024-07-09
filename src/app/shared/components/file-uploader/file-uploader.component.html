@@ -1,0 +1,48 @@
+<div class="file-uploader-container">
+  <div class="label">File Attachment</div>
+  <ngx-file-drop
+    dropZoneLabel="Drop files here"
+    (onFileDrop)="dropped($event)"
+    (onFileOver)="fileOver($event)"
+    (onFileLeave)="fileLeave($event)"
+    [dropZoneClassName]="'drop-zone'"
+  >
+    <ng-template
+      ngx-file-drop-content-tmp
+      let-openFileSelector="openFileSelector"
+    >
+      <div
+        class="inner-content"
+        [ngStyle]="{ opacity: fileOverFlag ? '.4' : '1' }"
+        (click)="openFileSelector()"
+      >
+        @if (currentFile) {
+        <h3>{{ currentFile.name }}</h3>
+        <div class="or">or</div>
+        <button type="button">Browse Files</button>
+        } @else {
+        <h3>Choose a file or drag & drop it here</h3>
+        <p>JPEG, PNG, PDG, and MP4 formats, up to 50MB</p>
+        <div class="or">or</div>
+        <button type="button">Browse Files</button>
+        }
+      </div>
+    </ng-template>
+  </ngx-file-drop>
+  <!-- <div class="upload-table">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Name</th>
+        </tr>
+      </thead>
+      <tbody class="upload-name-style">
+        <tr *ngFor="let item of files; let i = index">
+          <td>
+            <strong>{{ item.relativePath }}</strong>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div> -->
+</div>

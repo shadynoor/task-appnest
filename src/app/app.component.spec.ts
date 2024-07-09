@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'appnest-task' title`, () => {
+  it(`should have the 'kortobaa-web-new' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('appnest-task');
+    expect(app.title).toEqual('kortobaa-web-new');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, appnest-task');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, kortobaa-web-new');
   });
 });

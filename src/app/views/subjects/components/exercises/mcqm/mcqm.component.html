@@ -1,0 +1,100 @@
+<div class="box">
+  @if (type == 'single') {
+  <h3>اختيار فردي</h3>
+
+  } @else {
+  <h3>اختيار متعدد</h3>
+
+  }
+  <textarea
+    name="question-single"
+    id="question-single"
+    placeholder="نص السؤال,,,"
+    [(ngModel)]="questionTitle"
+  ></textarea>
+
+  <div class="level">
+    <button class="add-new" (click)="addOption()">
+      <span><i class="pi pi-plus"></i> </span>
+      <span>خيار جديد</span>
+    </button>
+
+    <div class="radios">
+      <div class="input">
+        <p-radioButton
+          name="level1"
+          value="easy"
+          [(ngModel)]="levelValue"
+          inputId="level1"
+        />
+        <label for="level1"> سهل </label>
+      </div>
+
+      <div class="input">
+        <p-radioButton
+          name="level2"
+          value="medium"
+          [(ngModel)]="levelValue"
+          inputId="level2"
+        />
+        <label for="level2"> متوسط </label>
+      </div>
+
+      <div class="input">
+        <p-radioButton
+          name="level3"
+          value="hard"
+          [(ngModel)]="levelValue"
+          inputId="level3"
+        />
+        <label for="level3"> صعب </label>
+      </div>
+    </div>
+  </div>
+
+  <div class="questions">
+    @for (option of optionsArr ; track $index) {
+    <div class="question">
+      <input
+        type="text"
+        placeholder="الاختيار رقم {{ $index + 1 }}"
+        [(ngModel)]="options['option' + ($index + 1)].value"
+      />
+      @if (type == 'single') {
+      <div class="input">
+        <input
+          id="correct{{ $index }}"
+          type="radio"
+          name="correctAnswer"
+          (change)="selectCorrectAnswer($index)"
+        />
+        <label for="correct{{ $index }}"> تحديد كاجابة صحيحة </label>
+      </div>
+      } @else {
+      <div class="input">
+        <input
+          id="correct{{ $index }}"
+          type="checkbox"
+          name="correctAnswer"
+          (change)="selectCorrectAnswer($index)"
+        />
+        <label for="correct{{ $index }}"> تحديد كاجابة صحيحة </label>
+      </div>
+      }
+    </div>
+    }
+  </div>
+
+  <div class="actions">
+    <p-toast />
+
+    <p-button
+      type="button"
+      pRipple
+      (click)="onSubmit()"
+      label="حفظ كمسودة"
+      severity="success"
+    />
+    <button class="cancel">الغاء</button>
+  </div>
+</div>

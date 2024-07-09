@@ -1,0 +1,76 @@
+@import "../../../styles.scss";
+
+.subjects-section {
+  // Start Tabs Style
+  .p-tabview-nav-content {
+    width: fit-content;
+  }
+  .p-tabview-nav {
+    height: 6rem;
+    position: relative;
+    width: fit-content;
+    li {
+      height: fit-content;
+      position: relative;
+      padding: 0 1.5rem;
+      &::after {
+        position: absolute;
+        content: "";
+        bottom: -1rem;
+        right: 0;
+        height: 2px;
+        width: 100%;
+        background-color: $tabsColor;
+      }
+    }
+  }
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .p-tabview-nav-link {
+    color: $tabsColor;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    font-weight: 700;
+    padding: 0 1rem;
+    position: relative;
+  }
+
+  .p-highlight {
+    position: relative;
+    a {
+      color: $tabsActiveColor;
+    }
+    &::after {
+      position: absolute;
+      background-color: $tabsActiveColor !important;
+      z-index: 3 !important;
+    }
+  }
+
+  // End Tabs Style
+
+  // Start Grid Style
+
+  .subjects-container {
+    h1 {
+      font-size: 2.8rem;
+      font-weight: 700;
+      line-height: 4.2rem;
+      color: $text-color;
+      margin-bottom: 1rem;
+    }
+    .subjects-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      @media (max-width: 480px) {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+
+  // Start Grid Style
+}

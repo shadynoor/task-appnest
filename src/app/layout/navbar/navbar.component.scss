@@ -1,0 +1,58 @@
+@import "../../../styles.scss";
+nav {
+  background-color: $navColor;
+  height: 8.4rem;
+  padding-inline-start: calc(25rem + 2.4rem);
+  padding-inline-end: 2.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 98;
+  @media (max-width: 768px) {
+    padding-inline-start: 2.4rem;
+  }
+
+  .toggler {
+    display: none;
+    cursor: pointer;
+    i {
+      font-size: 2.4rem;
+    }
+    @media (max-width: 768px) {
+      display: block;
+    }
+  }
+
+  .section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.94rem;
+    color: $text-color;
+  }
+
+  .actions {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    .icons {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      svg {
+        cursor: pointer;
+      }
+    }
+    .user {
+      button {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        cursor: pointer;
+      }
+    }
+  }
+}

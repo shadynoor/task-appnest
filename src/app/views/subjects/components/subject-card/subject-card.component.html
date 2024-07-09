@@ -1,0 +1,33 @@
+@if (data) {
+<div class="card">
+  <figure
+    (click)="addZoomClass()"
+    (mouseleave)="zoomClass = false"
+    [ngClass]="{ zoomed: zoomClass }"
+  >
+    <img
+      [src]="data.image"
+      alt="{{ data.name }}"
+      onerror="this.src='assets/imgs/backup-bg.webp'"
+      title="{{ data.name }}"
+    />
+  </figure>
+
+  <div class="details">
+    <div class="title">{{ data.name }}</div>
+    <div class="desc">
+      {{ data.description }}
+    </div>
+    <div class="status">
+      الحالة :
+      <span class="chip" [ngClass]="{ completed: data.status == 'مكتمل' }">{{
+        data.status
+      }}</span>
+    </div>
+    <div class="actions">
+      <p-button label="اضافة تمرين" icon="pi pi-arrow-left" iconPos="right" />
+    </div>
+  </div>
+</div>
+
+}

@@ -1,0 +1,92 @@
+.file-uploader-container {
+  .label {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0.5px;
+    color: var(--text-decription);
+    margin-top: 3.2rem;
+    margin-bottom: 1.2rem;
+  }
+  .drop-zone {
+    border: 1px dashed var(--light-border);
+    background: var(--surface-bg);
+    -webkit-border-radius: 1.2rem;
+    -moz-border-radius: 1.2rem;
+    -ms-border-radius: 1.2rem;
+    -o-border-radius: 1.2rem;
+    border-radius: 1.2rem;
+    padding: 6rem 0;
+
+    &.ngx-file-drop__drop-zone--over {
+      background: var(--surface-bg) !important;
+    }
+
+    .ngx-file-drop__content {
+      height: auto;
+    }
+    .inner-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      h3 {
+        font-size: 1.8rem;
+        font-weight: 600;
+        line-height: 180%;
+        color: var(--text-decription);
+      }
+      p {
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 180%;
+        color: var(--text-decription);
+        margin-top: 0.4rem;
+        margin-bottom: 2.1rem;
+      }
+      .or {
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.6rem;
+        font-weight: 500;
+        line-height: 180%;
+        color: var(--text-decription);
+        margin-bottom: 2.2rem;
+        &::after,
+        &::before {
+          position: absolute;
+          content: "";
+          height: 1px;
+          width: 21.6rem;
+          background-color: var(--light-border);
+          top: 50%;
+          transform: translateY(-50%);
+        }
+        &::before {
+          left: 5.2rem;
+        }
+        &::after {
+          right: 5.2rem;
+        }
+      }
+      button {
+        border: 1px solid var(--light-border);
+        background: var(--primary-Container);
+        height: 4rem;
+        padding: 0 2.4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        -webkit-border-radius: 1.2rem;
+        -moz-border-radius: 1.2rem;
+        -ms-border-radius: 1.2rem;
+        -o-border-radius: 1.2rem;
+        border-radius: 1.2rem;
+        cursor: pointer;
+      }
+    }
+  }
+}

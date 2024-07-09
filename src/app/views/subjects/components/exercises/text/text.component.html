@@ -1,0 +1,31 @@
+<div class="box">
+  <h3>نص</h3>
+  <textarea
+    name="question-single"
+    id="question-single"
+    placeholder="نص السؤال,,,"
+    [(ngModel)]="questionTitle"
+  ></textarea>
+
+  <div class="questions">
+    <textarea
+      name="question-single"
+      id="question-single"
+      placeholder="اجابة السؤال,,,"
+      [(ngModel)]="questionTitle"
+    ></textarea>
+  </div>
+
+  <div class="actions">
+    <p-toast />
+
+    <p-button
+      type="button"
+      pRipple
+      (click)="onSubmit()"
+      label="حفظ كمسودة"
+      severity="success"
+    />
+    <button class="cancel">الغاء</button>
+  </div>
+</div>

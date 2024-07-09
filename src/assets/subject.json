@@ -1,0 +1,116 @@
+[
+  {
+    "name": "علوم الحاسب 101",
+    "image": "https://appnest.pro/tasksimages/atom-1674878_640.png",
+    "description": "مقدمة في أساسيات علوم الحاسب، بما في ذلك الخوارزميات، وهياكل البيانات، والبرمجة.",
+    "status": "مكتمل"
+  },
+  {
+    "name": "تطوير الويب",
+    "image": "https://appnest.pro/tasksimages/board-453758_640.jpg",
+    "description": "استكشاف تقنيات الويب، يشمل HTML، CSS، JavaScript، والأطر الشهيرة.",
+    "status": "غير مكتمل"
+  },
+  {
+    "name": "إدارة قواعد البيانات",
+    "image": "https://appnest.pro/tasksimages/bullet-457334_640.jpg",
+    "description": "دراسة أنظمة قواعد البيانات، SQL، ومبادئ تصميم قواعد البيانات.",
+    "status": "غير مكتمل"
+  },
+  {
+    "name": "شبكات الحاسب",
+    "image": "https://appnest.pro/tasksimages/matrix-1735640_640.jpg",
+    "description": "فهم هياكل شبكات الحاسب، البروتوكولات، وأنظمة الاتصالات.",
+    "status": "مكتمل"
+  },
+  {
+    "name": "هندسة البرمجيات",
+    "image": "https://appnest.pro/tasksimages/monitor-1307227_640.jpg",
+    "description": "مبادئ تطوير البرمجيات، يشمل أنماط التصميم، الاختبار، وإدارة المشاريع.",
+    "status": "مكتمل"
+  },
+  {
+    "name": "الذكاء الاصطناعي",
+    "image": "https://appnest.pro/tasksimages/artificial-intelligence-4389372_640.jpg",
+    "description": "استكشاف مفاهيم الذكاء الاصطناعي، التعلم الآلي، ومعالجة اللغة الطبيعية.",
+    "status": "مكتمل"
+  },
+  {
+    "name": "أنظمة التشغيل",
+    "image": "https://appnest.pro/tasksimages/science-1182713_640.jpg",
+    "description": "دراسة مفاهيم أنظمة التشغيل، العمليات، إدارة الذاكرة، وأنظمة الملفات.",
+    "status": "غير مكتمل"
+  },
+  {
+    "name": "الأمن السيبراني",
+    "image": "https://appnest.pro/tasksimages/digital-388075_640.jpg",
+    "description": "التركيز على تأمين أنظمة الحاسب، الشبكات، والبيانات من التهديدات السيبرانية.",
+    "status": "غير مكتمل"
+  },
+  {
+    "name": "تطوير تطبيقات الجوال",
+    "image": "https://appnest.pro/tasksimages/web-3963945_640.jpg",
+    "description": "تطوير تطبيقات الجوال لمنصات iOS و Android.",
+    "status": "مكتمل"
+  },
+  {
+    "name": "علوم البيانات",
+    "image": "https://appnest.pro/tasksimages/digital-388075_640.jpg",
+    "description": "استكشاف التقنيات لتحليل وتفسير مجموعات البيانات المعقدة.",
+    "status": "مكتمل"
+  },
+  {
+    "name": "الرسومات الحاسوبية",
+    "image": "https://appnest.pro/tasksimages/matrix-1735640_640.jpg",
+    "description": "دراسة الخوارزميات والتقنيات لإنشاء الصور والرسوم المتحركة.",
+    "status": "مكتمل"
+  },
+  {
+    "name": "التفاعل بين الإنسان والحاسب",
+    "image": "https://appnest.pro/tasksimages/artificial-intelligence-4389372_640.jpg",
+    "description": "فهم تصميم وتفاعل بين البشر والحواسيب.",
+    "status": "مكتمل"
+  },
+  {
+    "name": "تحليل البيانات الكبيرة",
+    "image": "https://appnest.pro/tasksimages/monitor-1307227_640.jpg",
+    "description": "التعامل مع وتحليل كميات كبيرة من البيانات باستخدام تقنيات البيانات الكبيرة.",
+    "status": "غير مكتمل"
+  },
+  {
+    "name": "الحوسبة السحابية",
+    "image": "https://appnest.pro/tasksimages/digital-388075_640.jpg",
+    "description": "استكشاف هياكل الحوسبة السحابية، الخدمات، والنشر.",
+    "status": "مكتمل"
+  },
+  {
+    "name": "أخلاقيات الحاسب",
+    "image": "https://appnest.pro/tasksimages/board-453758_640.jpg",
+    "description": "الاعتبارات الأخلاقية في مجال علوم الحاسب والتكنولوجيا.",
+    "status": "غير مكتمل"
+  },
+  {
+    "name": "الرؤية الحاسوبية",
+    "image": "https://appnest.pro/tasksimages/finger-2956974_640.jpg",
+    "description": "فهم ومعالجة المعلومات المرئية بواسطة الحواسيب.",
+    "status": "مكتمل"
+  },
+  {
+    "name": "أنظمة مدمجة",
+    "image": "https://appnest.pro/tasksimages/digital-388075_640.jpg",
+    "description": "دراسة تصميم وبرمجة الأنظمة المدمجة لمهام محددة.",
+    "status": "مكتمل"
+  },
+  {
+    "name": "أمن الشبكات",
+    "image": "https://appnest.pro/tasksimages/bullet-457334_640.jpg",
+    "description": "تأمين شبكات الحاسب من الوصول غير المصرح به والهجمات.",
+    "status": "مكتمل"
+  },
+  {
+    "name": "هندسة الحاسب",
+    "image": "https://appnest.pro/tasksimages/board-453758_640.jpg",
+    "description": "فهم تصميم وهيكلية أنظمة الحاسب والمعالجات.",
+    "status": "مكتمل"
+  }
+]

@@ -1,0 +1,44 @@
+<section class="draggble-questions">
+  <div class="questions">
+    <div class="drags">
+      <p>اسحب نوع السؤال</p>
+      <ul>
+        <li
+          *ngFor="let product of availableProducts"
+          pDraggable
+          (onDragStart)="dragStart(product)"
+          (onDragEnd)="dragEnd()"
+        >
+          {{ product.name }}
+        </li>
+      </ul>
+    </div>
+    <div class="drop-area">
+      <div pDroppable (onDrop)="drop()" class="drop">
+        <p>قم بسحب و ادراج نوع السؤال هنا ..</p>
+        @if (selectedProducts.length > 0) {
+        <ul *ngIf="selectedProducts">
+          <li
+            *ngFor="let product of selectedProducts; let i = index"
+            (click)="deleteFromQuestions(i)"
+          >
+            <span> {{ product.name }} </span>
+            <span><i class="pi pi-times"></i></span>
+          </li>
+        </ul>
+        }
+      </div>
+
+      <div class="questions-list">
+        @for ( product of selectedProducts; track product.id) { @if
+        (product.type == 'text') {
+        <app-text [product]="product"></app-text>
+        } @if (product.type == 'mcqs') {
+        <app-mcqm [product]="product" [type]="'single'"></app-mcqm>
+        } @if (product.type == 'mcqm') {
+        <app-mcqm [product]="product" [type]="'multiple'"></app-mcqm>
+        } }
+      </div>
+    </div>
+  </div>
+</section>
